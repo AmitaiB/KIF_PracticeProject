@@ -15,6 +15,8 @@
 		38CF73D31BAF37860070134E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CF73D11BAF37860070134E /* LaunchScreen.storyboard */; };
 		38CF73DE1BAF37860070134E /* KIF_PracticeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CF73DD1BAF37860070134E /* KIF_PracticeProjectTests.m */; };
 		38CF73E91BAF37860070134E /* KIF_PracticeProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CF73E81BAF37860070134E /* KIF_PracticeProjectUITests.m */; };
+		38CF73FB1BAF3A600070134E /* KIFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CF73FA1BAF3A600070134E /* KIFTests.m */; settings = {ASSET_TAGS = (); }; };
+		38CF73FC1BAF3A600070134E /* KIFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CF73FA1BAF3A600070134E /* KIFTests.m */; settings = {ASSET_TAGS = (); }; };
 		F5EE18CD48833D47F3F1D2D3 /* libPods-KIF_PracticeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9447C8332A71764EE99F2151 /* libPods-KIF_PracticeProject.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,8 @@
 		38CF73E41BAF37860070134E /* KIF_PracticeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIF_PracticeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CF73E81BAF37860070134E /* KIF_PracticeProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIF_PracticeProjectUITests.m; sourceTree = "<group>"; };
 		38CF73EA1BAF37860070134E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38CF73F91BAF3A600070134E /* KIFTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KIFTests.h; sourceTree = "<group>"; };
+		38CF73FA1BAF3A600070134E /* KIFTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KIFTests.m; sourceTree = "<group>"; };
 		49732B2286AA1B7770DEAD70 /* Pods-KIF_PracticeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF_PracticeProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIF_PracticeProject/Pods-KIF_PracticeProject.debug.xcconfig"; sourceTree = "<group>"; };
 		661B88988F9759D1436513BF /* Pods-KIF_PracticeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF_PracticeProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIF_PracticeProject/Pods-KIF_PracticeProject.release.xcconfig"; sourceTree = "<group>"; };
 		9447C8332A71764EE99F2151 /* libPods-KIF_PracticeProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KIF_PracticeProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +138,8 @@
 			children = (
 				38CF73DD1BAF37860070134E /* KIF_PracticeProjectTests.m */,
 				38CF73DF1BAF37860070134E /* Info.plist */,
+				38CF73F91BAF3A600070134E /* KIFTests.h */,
+				38CF73FA1BAF3A600070134E /* KIFTests.m */,
 			);
 			path = KIF_PracticeProjectTests;
 			sourceTree = "<group>";
@@ -339,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38CF73FB1BAF3A600070134E /* KIFTests.m in Sources */,
 				38CF73DE1BAF37860070134E /* KIF_PracticeProjectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38CF73FC1BAF3A600070134E /* KIFTests.m in Sources */,
 				38CF73E91BAF37860070134E /* KIF_PracticeProjectUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
