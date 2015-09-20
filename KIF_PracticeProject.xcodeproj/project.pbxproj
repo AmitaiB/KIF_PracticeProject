@@ -15,6 +15,7 @@
 		38CF73D31BAF37860070134E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38CF73D11BAF37860070134E /* LaunchScreen.storyboard */; };
 		38CF73DE1BAF37860070134E /* KIF_PracticeProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CF73DD1BAF37860070134E /* KIF_PracticeProjectTests.m */; };
 		38CF73E91BAF37860070134E /* KIF_PracticeProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38CF73E81BAF37860070134E /* KIF_PracticeProjectUITests.m */; };
+		F5EE18CD48833D47F3F1D2D3 /* libPods-KIF_PracticeProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9447C8332A71764EE99F2151 /* libPods-KIF_PracticeProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		38CF73E41BAF37860070134E /* KIF_PracticeProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIF_PracticeProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		38CF73E81BAF37860070134E /* KIF_PracticeProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KIF_PracticeProjectUITests.m; sourceTree = "<group>"; };
 		38CF73EA1BAF37860070134E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49732B2286AA1B7770DEAD70 /* Pods-KIF_PracticeProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF_PracticeProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIF_PracticeProject/Pods-KIF_PracticeProject.debug.xcconfig"; sourceTree = "<group>"; };
+		661B88988F9759D1436513BF /* Pods-KIF_PracticeProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIF_PracticeProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIF_PracticeProject/Pods-KIF_PracticeProject.release.xcconfig"; sourceTree = "<group>"; };
+		9447C8332A71764EE99F2151 /* libPods-KIF_PracticeProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KIF_PracticeProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5EE18CD48833D47F3F1D2D3 /* libPods-KIF_PracticeProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				38CF73DC1BAF37860070134E /* KIF_PracticeProjectTests */,
 				38CF73E71BAF37860070134E /* KIF_PracticeProjectUITests */,
 				38CF73C11BAF37860070134E /* Products */,
+				4AC272FCE12A27209A750F4F /* Pods */,
+				C3F97FB0E227768B21FF102C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = KIF_PracticeProjectUITests;
 			sourceTree = "<group>";
 		};
+		4AC272FCE12A27209A750F4F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				49732B2286AA1B7770DEAD70 /* Pods-KIF_PracticeProject.debug.xcconfig */,
+				661B88988F9759D1436513BF /* Pods-KIF_PracticeProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3F97FB0E227768B21FF102C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9447C8332A71764EE99F2151 /* libPods-KIF_PracticeProject.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38CF73ED1BAF37860070134E /* Build configuration list for PBXNativeTarget "KIF_PracticeProject" */;
 			buildPhases = (
+				06002FE6F744A63ACB4992A4 /* Check Pods Manifest.lock */,
 				38CF73BC1BAF37860070134E /* Sources */,
 				38CF73BD1BAF37860070134E /* Frameworks */,
 				38CF73BE1BAF37860070134E /* Resources */,
+				D3A504173D73E703F301AA25 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,6 +290,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06002FE6F744A63ACB4992A4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3A504173D73E703F301AA25 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIF_PracticeProject/Pods-KIF_PracticeProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		38CF73BC1BAF37860070134E /* Sources */ = {
@@ -409,6 +468,7 @@
 		};
 		38CF73EE1BAF37860070134E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49732B2286AA1B7770DEAD70 /* Pods-KIF_PracticeProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KIF_PracticeProject/Info.plist;
@@ -420,6 +480,7 @@
 		};
 		38CF73EF1BAF37860070134E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 661B88988F9759D1436513BF /* Pods-KIF_PracticeProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KIF_PracticeProject/Info.plist;
@@ -496,6 +557,7 @@
 				38CF73EF1BAF37860070134E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38CF73F01BAF37860070134E /* Build configuration list for PBXNativeTarget "KIF_PracticeProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +566,7 @@
 				38CF73F21BAF37860070134E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38CF73F31BAF37860070134E /* Build configuration list for PBXNativeTarget "KIF_PracticeProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +575,7 @@
 				38CF73F51BAF37860070134E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

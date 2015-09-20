@@ -1,2 +1,2 @@
 # KIF_PracticeProject
-A project I made to practice using KIF testing
+My project for test-driving my KIF testing
